@@ -12,4 +12,9 @@ import "../styles/index.scss";
 import { App } from "./component/App";
 
 //render your react application
-ReactDOM.render(<App />, document.querySelector("#app"));
+ReactDOM.render(
+	<React.StrictMode>
+		<App />
+	</React.StrictMode>,
+	document.querySelector("#app")
+);
